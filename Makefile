@@ -47,6 +47,11 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr htmlcov/
 	rm -fr .pytest_cache
 
+dev-init: ## install virtualenv and install deps
+	python3 -m pip install virtualenv
+	virtualenv ~/.virtualenvs/solscraper
+	~/.virtualenvs/solscraper/bin/python3 -m pip install -r requirements_dev.txt
+
 lint/flake8: ## check style with flake8
 	flake8 solscraper tests
 lint/black: ## check style with black
