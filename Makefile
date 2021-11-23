@@ -49,6 +49,7 @@ clean-test: ## remove test and coverage artifacts
 
 dev-init: ## install virtualenv and install deps
 	python3 -m pip install virtualenv
+	mkdir -p ~/.virtualenvs
 	virtualenv ~/.virtualenvs/solscraper
 	~/.virtualenvs/solscraper/bin/python3 -m pip install -r requirements_dev.txt
 
