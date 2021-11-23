@@ -5,7 +5,7 @@
 import pytest
 
 
-from solscraper import solscraper
+# from solscraper import solscraper
 
 
 @pytest.fixture

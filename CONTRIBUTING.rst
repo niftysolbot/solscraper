@@ -69,6 +69,7 @@ Ready to contribute? Here's how to set up `solscraper` for local development.
     $ mkvirtualenv solscraper
     $ cd solscraper/
     $ python setup.py develop
+    $ ~/.virtualenvs/solscraper/bin/python solscraper/cli.py arg1 arg2
 
 4. Create a branch for local development::
 

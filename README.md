@@ -3,12 +3,23 @@
 
 ### Dev Setup
 
-`make dev-init`
+Also check out CONTRIBUTING.rst
 
-`source ~/.virtualenvs/solscraper/bin/activate`
+    $ make dev-init
+    $ source ~/.virtualenvs/solscraper/bin/activate
+    $ python setup.py develop
+    $ ~/.virtualenvs/solscraper/bin/python solscraper/cli.py arg1 arg2
 
-### Running the application
+### Running the command line tool
 
-`make install`
+    $ make install
+    $ solscraper arg1 arg2 arg3
 
-`solscraper seven seven seven`
+### Testing
+Unit tests
+
+    $ pytest
+
+Tox (run pytest with different Python versions) + Flake8 (linting)
+
+    $ tox
