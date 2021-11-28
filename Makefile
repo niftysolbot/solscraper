@@ -93,3 +93,8 @@ dist: clean ## builds source and wheel package
 
 install: clean ## install the package to the active Python's site-packages
 	python setup.py install
+
+splash-docker: ## install the package to the active Python's site-packages
+	docker pull scrapinghub/splash
+	docker run -it -p 8050:8050 --rm scrapinghub/splash
+	#docker run -it -p 8050:8050 -v /Users/ZMann/CodingProjects/niftysolbot/solscraper/proxy:/etc/splash/proxy-profiles --rm scrapinghub/splash

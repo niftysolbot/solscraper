@@ -23,3 +23,7 @@ Unit tests
 Tox (run pytest with different Python versions) + Flake8 (linting)
 
     $ tox
+
+
+
+Use the code Proxyway to get 20% OFF

@@ -1,7 +1,8 @@
 """Console script for solscraper."""
 import argparse
 import sys
-import solscraper
+
+from solscraper.solscraper_base import entrypoint
 
 
 def main():
@@ -12,7 +13,8 @@ def main():
 
     print("Arguments: " + str(args._))
     print("SOL Scraper has started")
-    solscraper.entrypoint(args._)
+
+    entrypoint(args._)
     return 0
 
 
