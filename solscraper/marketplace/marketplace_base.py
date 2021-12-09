@@ -13,4 +13,6 @@ class Marketplace(object):
 
 
 class MarketplaceNames(str, Enum):
-    SOLLAMAS = 'Sollamas'
+    SOLLAMAS = 'Sollamas',
+    DEGEN_APE_ACADEMY = 'Degenerate Ape Academy',
+    TURTLES = 'turtles'

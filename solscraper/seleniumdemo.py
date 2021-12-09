@@ -19,7 +19,9 @@ def get_driver():
 
 
 driver = get_driver()
-for marketplace in [MagicEden(), Solanart()]:
-    print("{} [{}] Floor Price: {}".format(MarketplaceNames.SOLLAMAS, marketplace.name,
-                                             marketplace.get_floor_price(driver, MarketplaceNames.SOLLAMAS)))
+
+for collection in [MarketplaceNames.SOLLAMAS, MarketplaceNames.DEGEN_APE_ACADEMY, MarketplaceNames.TURTLES]:
+    for marketplace in [MagicEden(), Solanart()]:
+        print("{} [{}] Floor Price: {}".format(collection, marketplace.name,
+                                             marketplace.get_floor_price(driver, collection)))
 driver.quit()

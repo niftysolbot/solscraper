@@ -10,7 +10,9 @@ class MagicEden(Marketplace):
                         "div[1]/div[1]/div[1]/span[2]"
 
     NFT_COLLECTION_LOOKUP_DICT = {
-        MarketplaceNames.SOLLAMAS: "sollamas"
+        MarketplaceNames.SOLLAMAS: "sollamas",
+        MarketplaceNames.DEGEN_APE_ACADEMY: 'degenerate_ape_academy',
+        MarketplaceNames.TURTLES: MarketplaceNames.TURTLES
     }
 
     def __init__(self):

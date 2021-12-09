@@ -10,7 +10,9 @@ class Solanart(Marketplace):
                         "span[1]/div[1]/button[3]/span[1]/div[1]/span[1]"
 
     NFT_COLLECTION_LOOKUP_DICT = {
-        MarketplaceNames.SOLLAMAS: "sollamas-gen2"
+        MarketplaceNames.SOLLAMAS: "sollamas-gen2",
+        MarketplaceNames.DEGEN_APE_ACADEMY: 'degenape',
+        MarketplaceNames.TURTLES: MarketplaceNames.TURTLES
     }
 
     def __init__(self):
