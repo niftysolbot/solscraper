@@ -31,7 +31,6 @@ def get_floor_solanart(the_driver, collection):
     # .until(lambda d: d.find_elements_by_class_name("MuiButton-label-451"))
     floor_price_element = WebDriverWait(the_driver, timeout=10) \
         .until(lambda d: d.find_elements_by_xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/div[2]/span[1]/div[1]/button[3]/span[1]/div[1]/span[1]"))
-    #MuiButton-label-376
     if floor_price_element and len(floor_price_element) > 0:
         print(str(floor_price_element[0].text))
 
