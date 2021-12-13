@@ -1,6 +1,6 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException as SeleniumTimeoutException
-from marketplace.marketplace_base import Marketplace, MarketplaceNames
+from .marketplace_base import Marketplace, MarketplaceNames
 import time
 
 
@@ -33,9 +33,12 @@ class Solanart(Marketplace):
         driver.implicitly_wait(10)
         time.sleep(7)
         floor_price = self.__get_floor_price(driver)
-        while not floor_price or floor_price.strip() == '0':
+        retries = 0
+        while not floor_price or floor_price.strip() == '0' and retries < 10:
             time.sleep(2)
             floor_price = self.__get_floor_price(driver)
+            retries += 1
+            print("retries: {}".format(retries))
         return floor_price
 
     def __get_floor_price(self, driver):

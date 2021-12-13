@@ -1,6 +1,6 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException as SeleniumTimeoutException
-from marketplace.marketplace_base import Marketplace, MarketplaceNames
+from .marketplace_base import Marketplace, MarketplaceNames
 import time
 
 
