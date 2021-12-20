@@ -6,7 +6,7 @@
 
 Also check out CONTRIBUTING.rst
 
-- Install Chromium: https://chromedriver.chromium.org/downloads
+- Install Chromium: https://chromedriver.chromium.org/downloads (version 96)
 - Unzip and copy the executable to ./binaries -> `mv ~/Downloads/chromedriver ./binaries`
 - Add the executable to your PATH (add this to ~/.bash_profile) -> `export PATH=$PATH:/Users/zman/PycharmProjects/solana-projects/solscraper/binaries`
 - Run the following commands:
@@ -34,3 +34,6 @@ Tox (run pytest with different Python versions) + Flake8 (linting)
 
     $ tox
 
+
+### Chromium Selenium Docker
+https://github.com/joyzoursky/docker-python-chromedriver/blob/master/py-debian/3.9-selenium/Dockerfile
