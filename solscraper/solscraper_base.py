@@ -1,6 +1,6 @@
 """Main module."""
 import json
-import solscraper.selenium.selenium_driver as selenium_driver
+# import solscraper.selenium.selenium_driver as selenium_driver
 
 
 def entrypoint(args):
