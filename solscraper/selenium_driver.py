@@ -1,9 +1,9 @@
 import os
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from solscraper.marketplace.magiceden import MagicEden
-from solscraper.marketplace.solanart import Solanart
-from solscraper.marketplace import marketplace_base
+from solscraper.selenium.marketplace import marketplace_base
+from solscraper.selenium.marketplace.magiceden import MagicEden
+from solscraper.selenium.marketplace.solanart import Solanart
 
 magiceden_markeplace = MagicEden()
 solanart_markeplace = Solanart()
